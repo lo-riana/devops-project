@@ -22,3 +22,8 @@ patches:
 images:
   - name: ghcr.io/lo-riana/devops-project
     newTag: "7474b555c8c131095aa3ada93aead83bcc55d6eb"
+commonAnnotations:
+  git-commit: "7474b555c8c131095aa3ada93aead83bcc55d6eb"
+  pipeline-run: "https://github.com/lo-riana/devops-project/actions/runs/44065763084"
+  owner: "team-a"
+  ticket: "OPS-123"
