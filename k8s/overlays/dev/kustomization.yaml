@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: dev
+resources:
+  - ../../base
+replicas:
+  - name: myapp
+    count: 1
+labels:
+  - pairs:
+      env: dev
+    includeSelectors: false
+    includeTemplates: true
+patches:
+  - target:
+      kind: ConfigMap
+      name: myapp-config
+    patch: |-
+      - op: replace
+        path: /data/APP_ENV
+        value: dev
