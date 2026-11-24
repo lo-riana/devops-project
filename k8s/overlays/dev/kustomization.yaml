@@ -21,4 +21,4 @@ patches:
         value: dev
 images:
   - name: ghcr.io/lo-riana/devops-project
-    newTag: "35f575be095718832f2ecc47339cec7f82d8e4b0"
+    newTag: "362d86dfaee3a0b369f6f0019d00d4ce69d59545"
