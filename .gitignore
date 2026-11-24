@@ -9,3 +9,5 @@ npm-debug.log*
 *.tfstate
 *.tfstate.*
 crash.log
+*.secret.tfvars
+secrets.auto.tfvars
